@@ -4,7 +4,7 @@ window.addEventListener('load', startGame);
 const amountLines = 4; // можно менять, но не решена проблема высоты элементов,
 const amountСolumns = 4; // они могут не влезть в окно
 
-function startGame() {
+export default function startGame() {
   const board = document.querySelector('.board');
   createItemBoard(board); // прорисовали поле
   generateGoblin();
@@ -32,13 +32,12 @@ function clearAll() { // убирает класс гоблин там где о
 
 function generateGoblin() {
   const elements = document.getElementsByTagName('td');
-  let indNew = Math.floor(Math.random() * elements.length);
-  
+  const indNew = Math.floor(Math.random() * elements.length);
+
   elements[indNew].classList.add('goblin');
- 
 }
 
 setInterval(() => {
-  clearAll(); 
+  clearAll();
   generateGoblin();
 }, 2000);
