@@ -2,6 +2,9 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/2ibhm3263ky2oaow?svg=true)](https://ci.appveyor.com/project/HelgaRoosh/ahj-pb-homework-2-gnome)
 
+ https://helgaroosh.github.io/ahj-pb-homework-2_gnome/
+ 
+
 # Домашнее задание к занятию "2. DOM"
 
 Правила сдачи задания:
